@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+		<title>TSP</title>
+    </head>
+    <body>
+
+        <div>
+            <div style="float: left; margin: 15px; text-align: right;">
+
+                <label for="cityCount">Cities</label>
+                <input type="text" id="cityCount" name="cityCount" value="20"><br />
+                <label for="initialPopulation">Initial Population</label>
+                <input type="text" id="initialPopulation" name="initialPopulation" value="50"><br />
+                <label for="generationCount">Generations</label>
+                <input type="text" id="generationCount" name="generationCount" value="500"><br />
+                <label for="parentsPerPopulation">Parents per Population</label>
+                <input type="text" id="parentsPerPopulation" name="parentsPerPopulation" value="10"><br />
+                <label for="mutationProbability">Mutation Probability</label>
+                <input type="text" id="mutationProbability" name="mutationProbability" value="0.2"><br />
+                <button id="generateCities" name="generateCities">
+                    Generate Cities
+                </button><br />
+                <button id="resetCities" name="resetCities">
+                    Reset Cities
+                </button><br />
+                <button id="startRound" name="startRound">
+                    Start Round
+                </button><br />
+            </div>
+            <canvas id="myCanvas" style="float: left"></canvas>
+        </div>
+
+    </body>
+</html>
